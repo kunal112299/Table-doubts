@@ -1,4 +1,5 @@
 const form=document.getElementById("GenerateTable");
+let output = document.getElementById("output");
 form.addEventListener("submit",function(event){
     event.preventDefault();
 
@@ -22,7 +23,7 @@ form.addEventListener("submit",function(event){
         table.append(tr);
     }
 
-    const output=document.getElementById("output");
+    
     output.append(table);
     
     
